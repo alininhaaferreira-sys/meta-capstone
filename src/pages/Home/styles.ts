@@ -15,7 +15,16 @@ export const ContentLeft = styled.div`
 
   h1 {
     color: var(--secundary-color);
-    font-size: 48px;
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h1,
+  h2 {
+    font-family: "Markazi Text", serif;
   }
 
   button {
