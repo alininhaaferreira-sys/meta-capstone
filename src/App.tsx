@@ -4,9 +4,13 @@ import { useReducer } from "react";
 import { initializeTimes, updateTimes } from "./state/times";
 import BookingPage from "./pages/BookingPage";
 import ConfirmedBooking from "./pages/ConfirmedBooking";
-import Container from "./components/Container";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import Login from "./pages/Login";
+import OrderOnline from "./pages/OrderOnline";
+import About from "./pages/About";
+import Footer from "./components/Footer";
 
 export type BookingFormData = {
   date: string;
@@ -40,6 +44,8 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
         <Route
           path="/booking"
           element={
@@ -50,8 +56,11 @@ export default function App() {
             />
           }
         />
+        <Route path="/orderOnline" element={<OrderOnline />} />
         <Route path="/booking/confirmed" element={<ConfirmedBooking />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
+      <Footer />
     </>
   );
 }

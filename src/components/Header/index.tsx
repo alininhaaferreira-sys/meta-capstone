@@ -5,7 +5,7 @@ import * as S from "./styles";
 
 const Header: React.FC = () => {
   return (
-    <header>
+    <S.Wrapper>
       <Container>
         <Link to="/">
           <img src="/assets/images/logo.svg" alt="Little Lemon logo" />
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
               <NavLink to="/booking">Reservations</NavLink>
             </li>
             <li>
-              <NavLink to="/order_online">Order online</NavLink>
+              <NavLink to="/orderOnline">Order online</NavLink>
             </li>
             <li>
               <NavLink to="/login">Login</NavLink>
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
           </ul>
         </S.Nav>
       </Container>
-    </header>
+    </S.Wrapper>
   );
 };
 

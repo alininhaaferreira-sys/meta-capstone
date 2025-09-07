@@ -1,5 +1,6 @@
 import React, { FormEvent, useMemo, useRef, useState } from "react";
 import { BookingFormData } from "../../../../App";
+import * as S from "./styles";
 
 type Occasion = "Birthday" | "Anniversary";
 type TimesAction = { type: "dateChanged"; payload: string };
@@ -112,7 +113,7 @@ export default function BookingForm({
   }
 
   return (
-    <form
+    <S.Form
       ref={formRef}
       onSubmit={handleSubmit}
       style={{ display: "grid", gap: 12, maxWidth: 360 }}
@@ -208,6 +209,6 @@ export default function BookingForm({
       >
         Make your reservation
       </button>
-    </form>
+    </S.Form>
   );
 }

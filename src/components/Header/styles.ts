@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.header`
+  padding: 12px 0;
+`;
+
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
