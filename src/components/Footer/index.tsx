@@ -9,7 +9,10 @@ function Footer() {
         <Container>
           <div>
             <Link to="/">
-              <img src="/assets/images/logo.svg" alt="Little Lemon logo" />
+              <img
+                src="/assets/images/footer-logo.png"
+                alt="Little Lemon logo"
+              />
             </Link>
           </div>
           <div>
@@ -43,6 +46,15 @@ function Footer() {
               <li>Street St. Louis 123</li>
               <li>contact@littlelemon.com</li>
               <li>(123) 4444-4444</li>
+            </ul>
+          </div>
+
+          <div>
+            <strong>Media Social links</strong>
+            <ul>
+              <li>Instagram</li>
+              <li>LinkedIn</li>
+              <li>Facebook</li>
             </ul>
           </div>
         </Container>

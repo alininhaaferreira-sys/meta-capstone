@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
+  padding-bottom: 32px;
+
   p {
     padding: 32px 0;
   }
